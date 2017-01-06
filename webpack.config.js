@@ -15,7 +15,7 @@ let entry = ['./src/site.js'];
 let devtool;
 
 if (isDev) {
-    entry.push('webpack-dev-server/client?http://0.0.0.0:8080');
+    entry.push('webpack-dev-server/client?http://0.0.0.0:8088');
     devtool = 'source-map';
 }
 
@@ -70,7 +70,6 @@ module.exports = {
     devServer: {
         contentBase: buildPath,
         host: '0.0.0.0',
-        port: 8080
+        port: 8088
     }
 };
-
